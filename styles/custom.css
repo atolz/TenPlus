@@ -1,0 +1,45 @@
+.h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #21243d;
+}
+
+.h2 {
+    font-size: 2.3rem;
+    /* font-weight: 600; */
+    color: #21243d;
+}
+
+.h3 {
+    font-size: 15px;
+    color: #21243d;
+    /* margin-left: 24px; */
+    margin-bottom: unset;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.alert {
+    padding: 1rem 2rem;
+    background-color: rgba(243, 209, 121, .6);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: .8rem;
+    font-size: 14px;
+    color: #21243d;
+}
+
+.h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #21243d;
+}
+
+.p1 {
+    color: #21243d;
+}
+
+.sourcesans {
+    font-family: Source Sans Pro, sans-serif;
+}
