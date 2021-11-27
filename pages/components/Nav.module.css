@@ -3,7 +3,8 @@
     height: 100%;
     position: sticky;
     width: 12.0rem;
-    background-color: white;
+    /* background-color: white; */
+    background-color: #21243d;
     top: 3rem;
     margin-right: 2rem;
     margin-left: auto;

@@ -2,6 +2,8 @@ import React from "react";
 import Lesson from "./Lesson";
 import TimeLine from "./TimeLine";
 import styles from './CourseModule.module.css'
+import EOMA from './EndOfModAss'
+
 
 const CourseModule = () => {
   return (
@@ -25,6 +27,7 @@ const CourseModule = () => {
     <Lesson></Lesson>
     <Lesson></Lesson>
     <Lesson></Lesson>
+    <EOMA></EOMA>
     </>
   );
 };

@@ -7,7 +7,7 @@ export default function MyNav() {
   return (
     <div className={sytles.sidebar}>
       <i className={"bi bi-cpu"} style={{ fontSize: "4em", color: "#a8abc1" }}></i>
-      <div className={"text-primary"}>Courses</div>
+      <div className={""}>Courses</div>
       <nav className={sytles.nav}>
         <Link href="/">
           <div className={sytles.navItem}>

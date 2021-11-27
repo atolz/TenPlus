@@ -26,6 +26,12 @@ const LayoutCourses = (props) => {
           <Link href="/accessment">
               <div className={router.pathname == "/accessment" ? styles.tabItem + " " + styles.tabItemActive : styles.tabItem}>Assessment</div>
           </Link>
+          <Link href="/curriculum">
+              <div className={router.pathname == "/curriculum" ? styles.tabItem + " " + styles.tabItemActive : styles.tabItem}>Curriculum</div>
+          </Link>
+          <Link href="/live-class">
+              <div className={router.pathname == "/live-class" ? styles.tabItem + " " + styles.tabItemActive : styles.tabItem}>Live Class</div>
+          </Link>
         </tab>
       </header>
       {props.children}

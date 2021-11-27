@@ -1,5 +1,6 @@
 import TimeLine from "./TimeLine";
 import styles from "./Lesson.module.css";
+import Assg from "./Assignment";
 
 const Lesson = () => {
   return (
@@ -19,13 +20,14 @@ const Lesson = () => {
           <p>Lesson Resources</p>
           <p></p>
         </div>
-        <div className={""}>
+        <div className={"mb-5"}>
           <div className={"flex items-center"}>
             <i className={"bi bi-file-earmark-text-fill mr-6"} style={{ fontSize: "2em", color: "#a8abc1" }}></i>
             <a className={"mr-auto flex-1 underline cursor-pointer"}>Lesson slides.pdf</a>
             <i className={"bi bi-lock-fill"} style={{ fontSize: "2em", color: "#a8abc1" }}></i>
           </div>
         </div>
+        <Assg></Assg>
       </TimeLine>
     </>
   );
