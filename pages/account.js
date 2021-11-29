@@ -1,6 +1,6 @@
 import React from "react";
-import AccountNav from "./components/Account/AccountNav";
-import AccountContent from "./components/Account/AccountContent";
+import AccountNav from "../components/Account/AccountNav";
+import AccountContent from "../components/Account/AccountContent";
 
 const account = () => {
   return (

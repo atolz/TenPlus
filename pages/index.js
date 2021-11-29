@@ -1,31 +1,53 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { Row, Col, Container } from "react-bootstrap";
-import styles from "../styles/Home.module.css";
-import Banner from "./components/Banner";
-import LayoutCourses from "./components/LayoutCourses";
-import CourseModule from "./components/Content/CourseModule";
+import { Row, Col } from "react-bootstrap";
+import Banner from "../components/Banner";
+import LayoutCourses from "../components/LayoutCourses";
+import CourseModule from "../components/Content/CourseModule";
+import Video from "../components/Content/Video";
+import { useEffect } from "react";
+import { connect } from "react-redux";
+import ModuleSwitcher from "../components/Content/ModSwitcher";
+// import { ShowpopupAction, HidepopupAction } from "../Redux.js/Actions/popUpActions";
 
-export default function Home() {
+function Home(props) {
+  useEffect(() => {
+    console.log("from home active course modules", props.state.activeCourse.modules);
+  });
+
   return (
     <Row>
-      <Col className={""} xs={7}>
-        <div className={"d-flex mb-5 "}>
-          <div className={styles.moduleSwitcher}>1</div>
-          <div className={styles.moduleSwitcher + " " + styles.moduleSwitcherActive}>2</div>
-          <div className={styles.moduleSwitcher + " " + styles.moduleSwitcherInActive}>3</div>
-          <div className={styles.moduleSwitcher}>4</div>
+      <Col className={""} md={12} lg={8}>
+        {/* <Col className={""}> */}
+        <div className="flex flex-wrap pb-4 w-full gap-4">
+          <Video></Video>
+          <Video></Video>
         </div>
-        <div>
-          <CourseModule></CourseModule>
+        <div className={"d-flex py-4 sticky top-28 left-0 bg-white z-10"}>
+          {props.state.activeCourse.modules.map((mod, i) => {
+            return <ModuleSwitcher key={i + 1} number={i + 1} inactive={mod.started ? false : true} module={mod}></ModuleSwitcher>;
+          })}
+        </div>
+        <div className="mt-6">
+          {props.state.activeCourse.modules.map((mod, i) => {
+            return <CourseModule module={mod} key={i} modNum={i + 1}></CourseModule>;
+          })}
         </div>
       </Col>
-      <Col xs={5}>
+      {/* <Col xs={5}>
         <Banner />
-      </Col>
+      </Col> */}
     </Row>
   );
 }
 
 Home.Layout = LayoutCourses;
+const mapStateToProps = (state) => {
+  return {
+    state: state.coursesReducer,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

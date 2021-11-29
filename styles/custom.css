@@ -33,6 +33,7 @@
     font-size: 13px;
     font-weight: 600;
     color: #21243d;
+    margin-bottom: 0 ;
 }
 
 .p1 {
@@ -41,4 +42,63 @@
 
 .sourcesans {
     font-family: Source Sans Pro, sans-serif;
+}
+
+.vid {
+    height: 280px;
+}
+
+.vid-intro {
+    /* max-height: 300px; */
+    min-height: 200px;
+    min-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.player {
+    /* background: url("https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/d6dd20e9-a0e1-4b1f-8e50-a6cbe5e97924.gif?ClientID=vimeo-core-prod&Date=1636718910&Signature=d0b7e7a6a9091eaf9ec55107c974db8dc3258d00") */
+}
+
+.ytp-title-enable-channel-logo .ytp-title-channel {
+    display: none !important;
+}
+
+.react-player__preview {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/ed651c80-8cb3-461a-b021-fab1228b689d.gif?ClientID=vimeo-core-prod&Date=1636718962&Signature=cfb6c258be97790e654164893c5ab168949160c3) !important; */
+}
+
+.react-player__shadow {
+    display: flex !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    background: #21243d !important;
+}
+
+.react-player__play-icon {
+    border-width: 12px 0 12px 22px !important;
+}
+
+.popUpCourse {
+    position: absolute;
+    top: 40%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    z-index: 102;
+    width: 483px;
+    margin: 0;
+    padding: 48px;
+    border-radius: 16px;
+    box-shadow: 0 3px 4px 0 rgb(220 222 237 / 32%);
+    border: 1px solid #e6e7ee;
+    background-color: #fff;
 }

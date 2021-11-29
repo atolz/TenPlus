@@ -1,5 +1,5 @@
 import React from "react";
-import LayoutCourses from "./components/LayoutCourses";
+import LayoutCourses from "../components/LayoutCourses";
 
 const LiveClass = () => {
   return <div>Live Class</div>;

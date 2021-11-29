@@ -1,6 +1,6 @@
 import React from "react";
-import Module from "./components/Accessment/Module";
-import LayoutCourses from "./components/LayoutCourses";
+import Module from "../components/Accessment/Module";
+import LayoutCourses from "../components/LayoutCourses";
 
 const accessment = () => {
   return (

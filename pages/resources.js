@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from "react";
-import LayoutCourses from "./components/LayoutCourses";
-import Nav from "./components/Resources/Nav";
-import Card from "./components/Resources/Card";
-import CardBuy from "./components/Resources/CardBuy";
+import LayoutCourses from "../components/LayoutCourses";
+import Nav from "../components/Resources/Nav";
+import Card from "../components/Resources/Card";
+import CardBuy from "../components/Resources/CardBuy";
 import ResourceContextProvider, { ResourceContext } from "./context/ResourceContext";
 
 const ResourceComponent = () => {
