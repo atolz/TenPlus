@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Assignment from "./Assignment";
 
-const Module = () => {
+const Module = (props) => {
   const [showAss, setShowAss] = useState(false);
 
   return (
@@ -11,7 +11,7 @@ const Module = () => {
           <img src="https://www.shawacademy.com/dashboard-new/assessments/badge-placeholder.svg"></img>
         </div>
         <div>
-          <h2 className="h3">Module 1</h2>
+          <h2 className="h3">{props.module.title}</h2>
           <p className="">Complete the final assignment to get module completion certificate</p>
         </div>
         <i

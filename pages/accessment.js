@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Module from "../components/Accessment/Module";
 import LayoutCourses from "../components/LayoutCourses";
+import { connect } from "react-redux";
 
-const accessment = () => {
+const Accessment = (props) => {
   return (
     <div className="flex justify-between">
       <div className="max-w-3xl w-full">
-        <Module></Module>
-        <Module></Module>
-        <Module></Module>
+        {props.modules.map((mod, i) => {
+          return <Module key={i} module={mod}></Module>;
+        })}
       </div>
       <div className="max-w-2xl w-full ml-8">
         <div className="flex flex-col bg-gray-900 rounded-3xl p-5">
@@ -41,6 +42,11 @@ const accessment = () => {
   );
 };
 
-export default accessment;
+function mapStateToProps(state) {
+  return {
+    modules: state.coursesReducer.activeCourse.modules,
+  };
+}
 
-accessment.Layout = LayoutCourses;
+Accessment.Layout = LayoutCourses;
+export default connect(mapStateToProps)(Accessment);

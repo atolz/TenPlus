@@ -21,6 +21,11 @@ const initialState = {
             desc: "Kickstart your course with getting an overview of the graphic design space. Get familiar with the idea of concepts, ideas and thoughts, an understanding of visual relationships that can help you communicate a direct and coherent message. Work your way through the holy trinity of graphic design applications - Adobe Photoshop, Illustrator & InDesign.",
             vidUrl: "/udemy.mp4",
           },
+          {
+            title: "The Foundation of Good Design",
+            desc: "Kickstart your course with getting an overview of the graphic design space. Get familiar with the idea of concepts, ideas and thoughts, an understanding of visual relationships that can help you communicate a direct and coherent message. Work your way through the holy trinity of graphic design applications - Adobe Photoshop, Illustrator & InDesign.",
+            vidUrl: "/udemy.mp4",
+          },
         ],
       },
       {
@@ -75,6 +80,11 @@ const initialState = {
               title: "What is Graphic Design?",
               desc: "Kickstart your course with getting an overview of the graphic design space. Get familiar with the idea of concepts, ideas and thoughts, an understanding of visual relationships that can help you communicate a direct and coherent message. Work your way through the holy trinity of graphic design applications - Adobe Photoshop, Illustrator & InDesign.",
               vidUrl: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
+            },
+            {
+              title: "The Foundation of Good Design",
+              desc: "Kickstart your course with getting an overview of the graphic design space. Get familiar with the idea of concepts, ideas and thoughts, an understanding of visual relationships that can help you communicate a direct and coherent message. Work your way through the holy trinity of graphic design applications - Adobe Photoshop, Illustrator & InDesign.",
+              vidUrl: "/udemy.mp4",
             },
             {
               title: "The Foundation of Good Design",

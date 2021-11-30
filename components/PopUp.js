@@ -29,18 +29,19 @@ const PopUp = (props) => {
         </div>
         {props.coursesStore.enrolled.map((course, i) => {
           return (
-            <section
-              onClick={(e) => {
-                e.preventDefault();
-                props.switchActiveCourse(course.id);
-                console.log("changed active course to:", props.coursesStore.activeCourse); //onclick always lags...
-              }}
-              key={i}
-              className="flex items-center cursor-pointer mb-4"
-            >
-              <img className="rounded-2xl mr-6 h-16 w-16 object-cover " src={course.img} />
-              <p className="h4">{course.name}</p>
-            </section>
+            <Link href="/" key={i}>
+              <section
+                onClick={(e) => {
+                  // e.preventDefault();
+                  props.switchActiveCourse(course.id);
+                  console.log("changed active course to:", props.coursesStore.activeCourse); //onclick always lags...
+                }}
+                className="flex items-center cursor-pointer mb-4"
+              >
+                <img className="rounded-2xl mr-6 h-16 w-16 object-cover " src={course.img} />
+                <p className="h4">{course.name}</p>
+              </section>
+            </Link>
           );
         })}
       </div>
